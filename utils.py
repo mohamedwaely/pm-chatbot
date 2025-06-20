@@ -19,16 +19,6 @@ def setup_openai():
     genai.configure(api_key=api_key)
 
 def get_openai_response(prompt, system_prompt=SYSTEM_PROMPT):
-    """
-    Get a response from the Gemini model
-    
-    Args:
-        prompt (str): The prompt to send to the model
-        system_prompt (str): The system prompt to use
-    
-    Returns:
-        str: The model's response
-    """
     try:
         # Create the generation config with safety settings
         generation_config = {
